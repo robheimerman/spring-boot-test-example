@@ -1,0 +1,4 @@
+mappers/TestModelMapperTest.class
+integration/AppControllerIT.class
+services/TestServiceTest.class
+controller/AppControllerTest.class

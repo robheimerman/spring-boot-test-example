@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="9.3">
+<file name="/Users/rob/Git/spring-boot-test-example/src/main/java/org/example/repositories/TestRepository.java">
+</file>
+<file name="/Users/rob/Git/spring-boot-test-example/src/main/java/org/example/models/TestModel.java">
+</file>
+<file name="/Users/rob/Git/spring-boot-test-example/src/main/java/org/example/controller/AppController.java">
+</file>
+<file name="/Users/rob/Git/spring-boot-test-example/src/main/java/org/example/mappers/TestModelMapper.java">
+</file>
+<file name="/Users/rob/Git/spring-boot-test-example/src/main/java/org/example/TestExample.java">
+</file>
+<file name="/Users/rob/Git/spring-boot-test-example/src/main/java/org/example/services/TestService.java">
+</file>
+<file name="/Users/rob/Git/spring-boot-test-example/src/main/java/org/example/entities/TestEntity.java">
+</file>
+<file name="/Users/rob/Git/spring-boot-test-example/src/main/resources/application-local.properties">
+</file>
+<file name="/Users/rob/Git/spring-boot-test-example/src/main/resources/application-test.properties">
+</file>
+</checkstyle>
