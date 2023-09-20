@@ -1,0 +1,7 @@
+org/example/repositories/TestRepository.class
+org/example/models/TestModel.class
+org/example/entities/TestEntity.class
+org/example/mappers/TestModelMapper.class
+org/example/controller/AppController.class
+org/example/TestExample.class
+org/example/services/TestService.class
