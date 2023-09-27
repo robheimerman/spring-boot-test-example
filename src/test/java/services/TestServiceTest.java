@@ -2,17 +2,20 @@ package services;
 
 import org.example.entities.TestEntity;
 import org.example.mappers.TestModelMapper;
+import org.example.models.TestModel;
+import org.example.repositories.TestRepository;
 import org.example.services.TestService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.example.repositories.TestRepository;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
@@ -40,6 +43,14 @@ class TestServiceTest {
         component.getTestModels();
         verify(mockedTestMapper, times(1)).mapEntityToModel(testEntities.get(0));
         verify(mockedTestMapper, times(1)).mapEntityToModel(testEntities.get(1));
+    }
+
+    @Test
+    public void getModels_should_return_mapped_models() {
+        TestModel model = new TestModel();
+        when(mockedTestRepository.findAll()).thenReturn(Collections.singletonList(buildTestEntity(1)));
+        when(mockedTestMapper.mapEntityToModel(any())).thenReturn(model);
+        assertEquals(model, component.getTestModels());
     }
 
     private static List<TestEntity> getTestEntities() {
