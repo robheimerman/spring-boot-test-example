@@ -14,13 +14,13 @@ import java.util.stream.Collectors;
 public class TestService {
 
     @Autowired
-    private TestRepository mockedTestRepository;
+    private TestRepository testRepository;
     @Autowired
     private TestModelMapper testModelMapper;
 
 
     public List<TestModel> getTestModels() {
-        List<TestEntity> entities = mockedTestRepository.findAll();
+        List<TestEntity> entities = testRepository.findAll();
 
         return entities
                 .stream()
