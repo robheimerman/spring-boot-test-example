@@ -50,7 +50,7 @@ class TestServiceTest {
         TestModel model = new TestModel();
         when(mockedTestRepository.findAll()).thenReturn(Collections.singletonList(buildTestEntity(1)));
         when(mockedTestMapper.mapEntityToModel(any())).thenReturn(model);
-        assertEquals(model, component.getTestModels());
+        assertEquals(Collections.singletonList(model), component.getTestModels());
     }
 
     private static List<TestEntity> getTestEntities() {
